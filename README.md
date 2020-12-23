@@ -75,9 +75,15 @@ Para la persistencia de datos se usa:
 
 * Base de datos: DAM (Archivo local)
 
-Estructura:
+Esquema relacional:
 
 ![basedatos](imagenes/db.png)
+
+##  Herramienta de Base de datos:
+El archivo de BD esta dentro del directorio llamado API y para visualizar sus valores se usó
+* DB Browser for SQLite: https://sqlitebrowser.org/
+
+![basedatos2](imagenes/db2.png)
 
 ## Operaciones API
 * http://localhost:3001/dispositivos/ : retorna json con los dispositivos de la BD.
@@ -87,7 +93,7 @@ Estructura:
 * http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
 
 ## Operaciones Frontend
-* Disenio de la interfaz gráfica.
+* Diseno de la interfaz gráfica.
 * Listar dispositivos en la pantalla.
 * Listar el detalle de cada sensor seleccionado.
 
