@@ -76,7 +76,7 @@ Esquema relacional:
 ![basedatos](imagenes/db.png)
 
 ##  Herramienta de Base de datos:
-El archivo de BD esta dentro del directorio llamado API y para visualizar sus valores se usó
+El archivo de BD esta dentro del directorio llamado API y para visualizar sus valores se usó DB Browser SqLite.
 * DB Browser for SQLite: https://sqlitebrowser.org/
 
 ![basedatos2](imagenes/db2.png)
@@ -96,6 +96,12 @@ El archivo de BD esta dentro del directorio llamado API y para visualizar sus va
 ## GUI de la App
 Listado de sensores
 ![operaciones](imagenes/gui.png)
+
+## Demostración de Funcionamiento
+* Funcionamiento en emulador.
+![play1](imagenes/play.png) https://youtu.be/ubd_LJ9voYU  
+* Funcionamiento en navegador.
+![play2](imagenes/play.png) https://youtu.be/ZMwUW98ipAo
 
 ## Licence
 
