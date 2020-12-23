@@ -88,11 +88,11 @@ Estructura:
 
 ## GUI de la App
 Listado de sensores
-![operaciones](doc/operaciones.png)
+![operaciones](doc/lista.png)
 
 Detalle del sensor seleccionado.
 
-![operaciones2](doc/operaciones2.png)
+![operaciones2](doc/detalle.png)
 
 Despues de agregar o realizar alguna acción sobre las opciones del dashboard, la lista de dispositivos se actualizará con los nuevos cambios realizados.
 
