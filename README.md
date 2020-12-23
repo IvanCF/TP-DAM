@@ -23,7 +23,7 @@ Rutas de servicios:
 ## Dashboard Principal
 Vista principal de la aplicación:
 
-![dashboard](imagenes/principal.png)
+![dashboard](imagenes/presentacion.png)
 
 ## Prerequisitos para el proyecto
 * Node js
