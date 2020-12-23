@@ -1,15 +1,6 @@
-# TP-DAM
-Proyecto DAM - IOT - UBA
 ![header](imagenes/header.png)
 
-## Proyecto del curso Desarrollo de Aplicaciones Multiplataforma
-
-Este proyecto permite la siguientes operaciones:
-* Crear nuevos dispositivos y agregarlos a la lista.
-* Editar el estado de activado o desactivado.
-* Eliminar dispositivos de la lista.
-
-Todas las operaciones tiene un efecto en la base de datos Mysql.
+## Proyecto DAM - IOT - UBA
 
 ## Autores del proyecto
 Autor:
@@ -19,16 +10,27 @@ Docente:
 
 * Brian Ducca
 
+
+Este proyecto esta formado por:
+* Backend: Express Js.
+* Frontend: Ionic.
+* Base Datos: Sqlite.
+
+Rutas de servicios:
+* Backend: http://localhost:3001/
+* Frontend: http://localhost:8100/
+
 ## Dashboard Principal
 Vista principal de la aplicación:
 
-![dashboard](doc/dashboard.png)
+![dashboard](imagenes/principal.png)
 
 ## Prerequisitos para el proyecto
-* node js
-* express js
-* npm
-* ionic
+* Node js
+* Express js
+* Npm
+* Ionic
+* Sqlite
 
 ## Imagenes Docker 
 Se debe ejecutar las siguientes imagenes necesarias para el proyecto:
