@@ -51,19 +51,18 @@ npm install
 
 ## Instrucciones de uso
 1.- En la terminal del Backend
-```
+```diff
+
 node index.js
 
-```
-```diff
 - Para algun cambio en index.js, detener el servicio y volver a ejecutarlo in red
-
+```
 
 2.- En la terminal del Frontend
-```
+```diff
 ionic serve
 
-![#f03c15](Para levantar el frontend demora de 5min a 10 min) `#f03c15` 
+-Para levantar el frontend demora de 5min a 10 min in red
 ```
 ## Urls Importantes:
 
@@ -74,18 +73,24 @@ ionic serve
 ## Base de datos:
 Para la persistencia de datos se usa:
 
-* Base de datos: DAM
+* Base de datos: DAM (Archivo local)
 
 Estructura:
 
 ![basedatos](imagenes/db.png)
 
-## Operaciones
-Imagen que muestra las operaciones implementadas, cada operación tiene efecto en la base de datos.
+## Operaciones API
+* http://localhost:3001/dispositivos/ : retorna json con los dispositivos de la BD.
+* http://localhost:3001/dispositivosCompletos/: devuelve mediciones de sensor.
+* http://localhost:3001/inicializar/ : inicializar los valores por defecto cuando la BD esta vacio.
+* http://localhost:3001/mediciones/:id : retorna los datos del registro codigo id.
+* http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
 
+## GUI de la App
+Listado de sensores
 ![operaciones](doc/operaciones.png)
 
-Operación de agregar un nuevo dispositivo mediante una ventana modal.
+Detalle del sensor seleccionado.
 
 ![operaciones2](doc/operaciones2.png)
 
