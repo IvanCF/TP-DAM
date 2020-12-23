@@ -3,7 +3,7 @@
 ## Proyecto DAM - IOT - UBA
 
 Autor:
-* Ivan Cruz Flores
+* Iván Cruz Flores
 
 Docente:
 
@@ -46,7 +46,7 @@ npm install
 ```
 
 ## Instrucciones de uso:
-1.- En la terminal del Backend
+1.- Para levantar el backend, en la terminal ubicarse dentro del directorio del backend y ejecutar:
 ```diff
 
 node index.js
@@ -54,7 +54,7 @@ node index.js
 - "Para algun cambio en index.js, detener el servicio y volver a ejecutarlo"
 ```
 
-2.- En la terminal del Frontend
+2.- Para levantar el frontend, en la terminal ubicarse dentro del directorio del frontend y ejecutar:
 ```diff
 ionic serve
 
@@ -71,7 +71,7 @@ Para la persistencia de datos se usa:
 
 * Base de datos: DAM (Archivo local)
 
-Esquema relacional:
+* Esquema relacional:
 
 ![basedatos](imagenes/db.png)
 
@@ -84,7 +84,7 @@ El archivo de BD esta dentro del directorio llamado API y para visualizar sus va
 ## Operaciones API
 * http://localhost:3001/dispositivos/ : retorna json con los dispositivos de la BD.
 * http://localhost:3001/dispositivosCompletos/: devuelve mediciones de sensor.
-* http://localhost:3001/inicializar/ : inicializar los valores por defecto cuando la BD esta vacio.
+* http://localhost:3001/inicializar/ : inicializar los valores por defecto cuando la BD esta vacia.
 * http://localhost:3001/mediciones/:id : retorna los datos del registro codigo id.
 * http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
 
