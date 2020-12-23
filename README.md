@@ -2,7 +2,6 @@
 
 ## Proyecto DAM - IOT - UBA
 
-## Autores del proyecto
 Autor:
 * Ivan Cruz Flores
 
@@ -32,22 +31,22 @@ Vista principal de la aplicación:
 * Ionic
 * Sqlite
 
-## Imagenes Docker 
-Se debe ejecutar las siguientes imagenes necesarias para el proyecto:
-```
-docker pull harmish/typescript
-docker pull mysql:5.7
-docker pull phpmyadmin/phpmyadmin
-docker pull abassi/nodejs-server:10.0-dev
-```
-
-Para conocer más sobre la estructura interna, se puede revisar la Wiki [this link](https://github.com/ce-iot/daw-project-template/wiki).
 
 ## Instrucciones de uso
-Para iniciar y levantar la aplicación se debe ejecutar:
+Despues de clonar el repositorio se debe instalar las dependencias npm:
+
+1.- Usando la terminal ubicarse dentro de la ruta del Backend.
 ```
-docker-compose up
+cd TP-DAM/API/
+npm install
 ```
+2.- Usando la terminal ubicarse dentro de la ruta del Frontend
+```
+cd TP-DAM/front/myApp/
+npm install
+```
+
+
 ## Urls Importantes:
 
 * Sever local para ver la aplicación: http://localhost:8000
