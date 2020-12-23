@@ -99,13 +99,13 @@ Listado de sensores
 
 ## Demostración de Funcionamiento:
 * Funcionamiento en emulador.
-```
+
 ![play1](imagenes/play.png) https://youtu.be/ubd_LJ9voYU  
-```
+
 * Funcionamiento en navegador.
-```
+
 ![play2](imagenes/play.png) https://youtu.be/ZMwUW98ipAo
-```
+
 ## Licence:
 
 This project is published under GPLV3+ licence.
