@@ -55,14 +55,14 @@ npm install
 
 node index.js
 
-- Para algun cambio en index.js, detener el servicio y volver a ejecutarlo in red
+- "Para algun cambio en index.js, detener el servicio y volver a ejecutarlo"
 ```
 
 2.- En la terminal del Frontend
 ```diff
 ionic serve
 
--Para levantar el frontend demora de 5min a 10 min in red
+- "Para levantar el frontend demora de 5min a 10 min
 ```
 ## Urls Importantes:
 
