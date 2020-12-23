@@ -15,12 +15,12 @@ Docente:
 * Frontend: Ionic.
 * Base Datos: Sqlite.
 
-## Dashboard Principal
+## Dashboard Principal:
 Vista principal de la aplicación:
 
 ![dashboard](imagenes/presentacion.png)
 
-## Prerequisitos para el proyecto
+## Prerequisitos para el proyecto:
 * Node js
 * Express js
 * Npm
@@ -28,7 +28,7 @@ Vista principal de la aplicación:
 * Sqlite
 
 
-## Instalacion de dependencias
+## Instalacion de dependencias:
 Despues de clonar el repositorio se debe instalar las dependencias npm:
 
 1.- Usando la terminal ubicarse dentro de la ruta del Backend.
@@ -45,7 +45,7 @@ npm install
 
 ```
 
-## Instrucciones de uso
+## Instrucciones de uso:
 1.- En la terminal del Backend
 ```diff
 
@@ -88,22 +88,25 @@ El archivo de BD esta dentro del directorio llamado API y para visualizar sus va
 * http://localhost:3001/mediciones/:id : retorna los datos del registro codigo id.
 * http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
 
-## Operaciones Frontend
+## Operaciones Frontend:
 * Diseno de la interfaz gráfica.
 * Listar dispositivos en la pantalla.
 * Listar el detalle de cada sensor seleccionado.
 
-## GUI de la App
+## GUI de la App:
 Listado de sensores
 ![operaciones](imagenes/gui.png)
 
-## Demostración de Funcionamiento
+## Demostración de Funcionamiento:
 * Funcionamiento en emulador.
+```
 ![play1](imagenes/play.png) https://youtu.be/ubd_LJ9voYU  
+```
 * Funcionamiento en navegador.
+```
 ![play2](imagenes/play.png) https://youtu.be/ZMwUW98ipAo
-
-## Licence
+```
+## Licence:
 
 This project is published under GPLV3+ licence.
 
