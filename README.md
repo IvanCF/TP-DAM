@@ -10,14 +10,10 @@ Docente:
 * Brian Ducca
 
 
-Este proyecto esta formado por:
+## Este proyecto esta formado por:
 * Backend: Express Js.
 * Frontend: Ionic.
 * Base Datos: Sqlite.
-
-Rutas de servicios:
-* Backend: http://localhost:3001/
-* Frontend: http://localhost:8100/
 
 ## Dashboard Principal
 Vista principal de la aplicación:
@@ -64,11 +60,11 @@ ionic serve
 
 - "Para levantar el frontend demora de 5min a 10 min
 ```
-## Urls Importantes:
 
-* Sever local para ver la aplicación: http://localhost:8000
-* Server para gestión de Mysql usando PhpMyadmin: http://localhost:8001 
-
+## Urls Importantes: 
+* Backend: http://localhost:3001/
+* Frontend: http://localhost:8100/
+ 
 
 ## Base de datos:
 Para la persistencia de datos se usa:
