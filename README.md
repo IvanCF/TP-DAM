@@ -86,15 +86,14 @@ Estructura:
 * http://localhost:3001/mediciones/:id : retorna los datos del registro codigo id.
 * http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
 
+## Operaciones Frontend
+* Disenio de la interfaz gráfica.
+* Listar dispositivos en la pantalla.
+* Listar el detalle de cada sensor seleccionado.
+
 ## GUI de la App
 Listado de sensores
-![operaciones](imagenes/lista.png)
-
-Detalle del sensor seleccionado.
-
-![operaciones2](imagenes/detalle.png)
-
-Despues de agregar o realizar alguna acción sobre las opciones del dashboard, la lista de dispositivos se actualizará con los nuevos cambios realizados.
+![operaciones](imagenes/gui.png)
 
 ## Licence
 
