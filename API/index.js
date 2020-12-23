@@ -1,7 +1,4 @@
-//https: //medium.com/swlh/creating-a-crud-application-using-node-js-and-sqlite3-a57d4a39ab69
- //   https: //www.youtube.com/watch?v=ShuhF3t5z74&t=294s
 
- //import cors from 'cors';
 const http = require('http');
 const express = require('express');
 const cors = require ('cors');
@@ -12,7 +9,7 @@ const PUERTO = 3001;
 const fs = require('fs');
 
 /************** */
-//app.use(cors());
+
 var corsOptions = {
     origin: "*",
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -170,14 +167,14 @@ res.send("BD inicializado...");
 );
 
 
-app.get('/add/:id/:name', function(req, res) {
+app.get('/addDispositivo/:nombre/:ubicacion/:electrovalvulaId', function(req, res) {
     db.serialize(() => {
-        db.run('INSERT INTO emp(id,name) VALUES(?,?)', [req.params.id, req.params.name], function(err) {
+        db.run('INSERT INTO Dispositivo(nombre, ubicacion, electrovalvulaId) VALUES(?,?,?)', [req.params.nombre, req.params.ubicacion,reg.params.electrovalvulaId], function(err) {
             if (err) {
                 return console.log(err.message);
             }
             console.log("New employee has been added");
-            res.send("New employee has been added into the database with ID = " + req.params.id + " and Name = " + req.params.name);
+            res.send("New agregado nombre = " + req.params.nombre + " and ubicacion = " + req.params.ubicacion);
         });
     });
 });
