@@ -53,8 +53,12 @@ npm install
 1.- En la terminal del Backend
 ```
 node index.js
-![#f03c15](Para algun cambio en el index.js, deberá detener el servicio y volver a ejecutar) `#f03c15` 
+
 ```
+```diff
+- Para algun cambio en index.js, detener el servicio y volver a ejecutarlo in red
+
+
 2.- En la terminal del Frontend
 ```
 ionic serve
