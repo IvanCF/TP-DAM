@@ -105,15 +105,19 @@ El archivo de BD esta dentro del directorio llamado API y para visualizar sus va
 
 ## GUI de la App:
 Listado de sensores.
+
 ![operaciones](imagenes/gui.png)
 
 Listado de mediciones y logs.
+
 ![operaciones](imagenes/gui2.png)
 
 Estados de la electrovalvula.
+
 ![operaciones](imagenes/gui4.png)
 
 Alerta y operaciones de apertura y cierre de la electrovalvula.
+
 ![operaciones](imagenes/gui3.png)
 
 
