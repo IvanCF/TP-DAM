@@ -82,20 +82,40 @@ El archivo de BD esta dentro del directorio llamado API y para visualizar sus va
 ![basedatos2](imagenes/db2.png)
 
 ## Operaciones API
-* http://localhost:3001/dispositivos/ : retorna json con los dispositivos de la BD.
-* http://localhost:3001/dispositivosCompletos/: devuelve mediciones de sensor.
 * http://localhost:3001/inicializar/ : inicializar los valores por defecto cuando la BD esta vacia.
-* http://localhost:3001/mediciones/:id : retorna los datos del registro codigo id.
-* http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra dispositivos.
+* http://localhost:3001/mediciones/:id : retorna un JSON con los datos del registro de mediciones por código ID.
+* http://localhost:3001/dispositivos/ : retorna JSON con los dispositivos de la Base de Datos.
+* http://localhost:3001/dispositivosCompletos/: devuelve JSON con consulta cruzada entre el sensor y sus mediciones.
+* http://localhost:3001/valorMasActualDispositivo/:id : retorna un JSON con la tabla filtraba de mediciones.
+* http://localhost:3001/listaLogsCompleta/ : retorna un JSON con todos los registros de la tabla log.
+* http://localhost:3001/listaLogs/:id retorna un JSON con los resgitros log del código ID.
+* http://localhost:3001/addMediciones/:fecha/:valor/:dispositivoId : registra una nueva medición.
+* http://localhost:3001/addLogDispositivo/:estado/:fecha/:electrovalvulaId: registra un nuevo registro log.
+* http://localhost:3001/addDispositivo/:nombre/:ubicacion/:electrovalvulaId : registra un nuevo dispositivos.
 
 ## Operaciones Frontend:
-* Diseno de la interfaz gráfica.
 * Listar dispositivos en la pantalla.
-* Listar el detalle de cada sensor seleccionado.
+* Visualiza un gráfico de valvula del último valor del sensor seleccionado.
+* Listar los registros de las medidas del sensor seleccionado.
+* Listar los registros del logs del sensor seleccionado.
+* Detectar el estado actual del sensor Abierto/Cerrado.
+* Registrar en los logs cuando se abre la Electrovalvula.
+* Registro del ultimo valor de medición.
+* Registrar en los logs y en mediciones cuando se cierra la Electrovalvula.
 
 ## GUI de la App:
-Listado de sensores
+Listado de sensores.
 ![operaciones](imagenes/gui.png)
+
+Listado de mediciones y logs.
+![operaciones](imagenes/gui2.png)
+
+Estados de la electrovalvula.
+![operaciones](imagenes/gui4.png)
+
+Alerta y operaciones de apertura y cierre de la electrovalvula.
+![operaciones](imagenes/gui3.png)
+
 
 ## Demostración de Funcionamiento:
 * Funcionamiento en emulador.
