@@ -122,13 +122,11 @@ Alerta y operaciones de apertura y cierre de la electrovalvula.
 
 
 ## Demostración de Funcionamiento:
-* Funcionamiento en emulador.
+* Funcionamiento.
 
-![play1](imagenes/play.png) https://youtu.be/ubd_LJ9voYU  
+![play1](imagenes/play.png)  ...
 
-* Funcionamiento en navegador.
 
-![play2](imagenes/play.png) https://youtu.be/ZMwUW98ipAo
 
 ## Licence:
 
