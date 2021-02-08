@@ -163,10 +163,10 @@ export class GraficoPage implements OnInit {
           handler: (data) => {
             console.log("Confirm Ok");
 
-            //registra medicion
+            //registra en la tabla medicion
             this.registrarMedicion(data.valor);
 
-            //registra log
+            //registra en la tabla log
             this.registrarLogElectrovalvula("close");
           },
         },
