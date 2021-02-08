@@ -1,19 +1,48 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Autor
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            <ion-icon name="pulse-outline"></ion-icon>
+            <ion-text> Logs COD. Sensor: </ion-text>{{codigo}}
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Ayuda</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Ayuda</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-<ion-text>
-  Ivan Cruz Flores
-</ion-text>
+    <ion-list *ngFor="let dispositivo of dispositivoLog">
+        <ion-item>
+
+            <ion-label *ngIf="dispositivo.apertura=='open'">
+                <ion-text id="textoRojo">
+
+                    <ion-icon name="lock-open-outline" size="small"></ion-icon>
+                </ion-text>
+
+                {{ dispositivo.fecha}} |
+                <ion-text id="textoRojo">
+                    {{dispositivo.apertura | pipePersonalizado:true}}
+
+                </ion-text>
+            </ion-label>
+
+
+            <ion-label *ngIf="dispositivo.apertura=='close'">
+                <ion-text id="textoVerde">
+                    <ion-icon name="lock-closed-outline" size="small"></ion-icon>
+                </ion-text>
+                {{ dispositivo.fecha}} |
+                <ion-text id="textoVerde">
+                    {{dispositivo.apertura | pipePersonalizado:false}}
+                </ion-text>
+            </ion-label>
+
+        </ion-item>
+
+    </ion-list>
+
 </ion-content>

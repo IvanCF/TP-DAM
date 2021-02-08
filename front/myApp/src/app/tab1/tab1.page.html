@@ -1,41 +1,31 @@
-
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Dispositivos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header color="dark">
+        <ion-toolbar>
+            <ion-title size="large">
+                <ion-text> Dispositivos </ion-text>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
 
 
 
-<!-- List of Input Items -->
-<ion-list>
- 
-  
-  
-  
-  <ion-item *ngFor="let dispositivo of dispositivoSinRepetir" >
-  
-      <ion-icon *ngIf="dispositivo.nombre=='Temperatura'" name="thermometer" slot="start"></ion-icon>
-      <ion-icon *ngIf="dispositivo.nombre=='Luz'" name="flame" slot="start"></ion-icon>
-      <ion-icon *ngIf="dispositivo.nombre=='Fuego'" name="bonfire" slot="start"></ion-icon>
-    <ion-label>
-     
-      <h2><a style="text-decoration:none" (click)="enviarCodigo(dispositivo.dispositivoId);">  {{dispositivo.nombre}} </a></h2>
-      <h3>{{dispositivo.ubicacion}}</h3>
-    </ion-label>
-    <ion-toggle slot="end"> </ion-toggle>
-  </ion-item>
-</ion-list>
+    <!-- List of Input Items -->
+    <ion-list>
 
+        <ion-item *ngFor="let dispositivo of dispositivoSinRepetir">
 
-<!-- fab placed to the top end -->
-<ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
+            <ion-icon *ngIf="dispositivo.nombre=='Sensor Hum. Interior'" name="thermometer" slot="start"></ion-icon>
+            <ion-icon *ngIf="dispositivo.nombre=='Sensor Hum. Exterior'" name="sunny-outline" slot="start"></ion-icon>
+
+            <!-- <ion-icon *ngIf="dispositivo.nombre=='Fuego'" name="bonfire" slot="start"></ion-icon> -->
+            <ion-label id="textoDispositivo">
+
+                <h2><a style="text-decoration:none" (click)="enviarCodigo(dispositivo.dispositivoId);">  {{dispositivo.nombre}} </a></h2>
+                <h3>{{dispositivo.ubicacion}}</h3>
+            </ion-label>
+            <!-- <ion-toggle slot="end"> </ion-toggle> -->
+        </ion-item>
+    </ion-list>
+
 
 </ion-content>
-

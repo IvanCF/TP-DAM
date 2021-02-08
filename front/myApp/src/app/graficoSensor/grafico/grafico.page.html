@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>
+            <ion-icon name="bar-chart-outline"></ion-icon>
+            <ion-text> Gráfico</ion-text>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div id="highcharts" style="width: 100%; height: 300px"></div>
+
+    <ion-button *ngIf="mensajeBoton==false" expand="full" shape="round" (click)="activarAperturaElectrovalvula();">Abrir electrovalvula</ion-button>
+    <ion-button *ngIf="mensajeBoton==true" expand="full" shape="round" color="danger" (click)="desactivarAperturaElectrovalvula();">Cerrar electrovalvula</ion-button>
+    <ion-button expand="full" fill="outline" shape="round" (click)="enviarCodigo();">Ver Todas Mediciones</ion-button>
+    <ion-button expand="full" fill="outline" shape="round" (click)="verRegistroLog();">Ver Logs Riegos</ion-button>
+
+    <br />
+    <br />
+
+    <ion-text *ngIf="mensajeBoton==false" color="success" id="centrarTexto">
+        <h5>La Electrovalvula esta Cerrado</h5>
+    </ion-text>
+
+    <ion-text *ngIf="mensajeBoton==true" color="danger" id="centrarTexto">
+        <h5>¡La Electrovalvula esta Abierto!</h5>
+    </ion-text>
+</ion-content>
